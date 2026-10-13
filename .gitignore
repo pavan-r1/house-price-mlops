@@ -1,0 +1,40 @@
+@"
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# MLflow
+mlruns/
+mlartifacts/
+mlflow.db
+
+# DVC cache
+.dvc/cache/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build files
+build/
+dist/
+"@ | Set-Content .gitignore
